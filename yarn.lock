@@ -943,7 +943,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.25.0":
+"@eslint/js@npm:9.25.0, @eslint/js@npm:^9.25.0":
   version: 9.25.0
   resolution: "@eslint/js@npm:9.25.0"
   checksum: 10c0/4a03e2b218e086af89465563151610f30c1ff38e53a4b09fa71d2e7d1f1b37d72e3aacaf2ccb949544b6fcbc12b118162f5edb6e7deee9b3bfd816745fe74dfa
@@ -5438,6 +5438,7 @@ __metadata:
   resolution: "nasreddinebacali.info@workspace:."
   dependencies:
     "@eslint/css": "npm:^0.7.0"
+    "@eslint/js": "npm:^9.25.0"
     "@react-router/dev": "npm:^7.5.1"
     "@react-router/node": "npm:^7.5.1"
     "@react-router/serve": "npm:^7.5.1"
