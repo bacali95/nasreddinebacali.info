@@ -10,9 +10,6 @@ concurrency: ${{ github.ref }}
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - name: Check out the code 🗄
         uses: actions/checkout@v4
