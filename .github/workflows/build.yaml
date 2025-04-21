@@ -1,0 +1,26 @@
+name: Build the website
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency: ${{ github.ref }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code 🗄
+        uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup-environment
+
+      - name: Lint the code 🕵
+        run: yarn lint:check
+
+      - name: Check the prettiness of the code 💅
+        run: yarn format:check
+
+      - name: Build code 🛠
+        run: yarn build

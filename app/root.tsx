@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
+import React from "react";
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -31,7 +31,7 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout() {
   return (
     <html lang="en">
       <head>
@@ -198,7 +198,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         </div>
-        {/* {children} */}
         <ScrollRestoration />
         <Scripts />
         <script src="/scripts/index.js" type="module"></script>
